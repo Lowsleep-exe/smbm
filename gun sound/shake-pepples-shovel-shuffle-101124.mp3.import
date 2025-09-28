@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcdg0bdfr3h1e"
+path="res://.godot/imported/shake-pepples-shovel-shuffle-101124.mp3-b3916670dffab49c6dd175419436da09.mp3str"
+
+[deps]
+
+source_file="res://gun sound/shake-pepples-shovel-shuffle-101124.mp3"
+dest_files=["res://.godot/imported/shake-pepples-shovel-shuffle-101124.mp3-b3916670dffab49c6dd175419436da09.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

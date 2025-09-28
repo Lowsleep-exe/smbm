@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0ivbough6a24"
+path="res://.godot/imported/bats-33995.mp3-87d4bc17b1bf102ab6d85c4a5bd0e17c.mp3str"
+
+[deps]
+
+source_file="res://gun sound/bats-33995.mp3"
+dest_files=["res://.godot/imported/bats-33995.mp3-87d4bc17b1bf102ab6d85c4a5bd0e17c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

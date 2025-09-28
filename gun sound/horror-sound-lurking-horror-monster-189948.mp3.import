@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhb3214svvb0g"
+path="res://.godot/imported/horror-sound-lurking-horror-monster-189948.mp3-72af6eb2b69f916d6ad3b968429f8aa0.mp3str"
+
+[deps]
+
+source_file="res://gun sound/horror-sound-lurking-horror-monster-189948.mp3"
+dest_files=["res://.godot/imported/horror-sound-lurking-horror-monster-189948.mp3-72af6eb2b69f916d6ad3b968429f8aa0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

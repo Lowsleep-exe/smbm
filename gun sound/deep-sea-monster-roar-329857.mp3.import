@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8bbl03euolyf"
+path="res://.godot/imported/deep-sea-monster-roar-329857.mp3-29c1dd02aaebd4022518187f46c66e91.mp3str"
+
+[deps]
+
+source_file="res://gun sound/deep-sea-monster-roar-329857.mp3"
+dest_files=["res://.godot/imported/deep-sea-monster-roar-329857.mp3-29c1dd02aaebd4022518187f46c66e91.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

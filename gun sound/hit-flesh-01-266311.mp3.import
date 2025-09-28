@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cr7k8qhd8lh64"
+path="res://.godot/imported/hit-flesh-01-266311.mp3-6cea103d52f5b48e659012e47eb0acd9.mp3str"
+
+[deps]
+
+source_file="res://gun sound/hit-flesh-01-266311.mp3"
+dest_files=["res://.godot/imported/hit-flesh-01-266311.mp3-6cea103d52f5b48e659012e47eb0acd9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

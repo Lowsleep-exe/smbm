@@ -1,0 +1,174 @@
+[gd_scene load_steps=29 format=3 uid="uid://d22mvsyx8top5"]
+
+[ext_resource type="Script" path="res://Scenes/health.gd" id="1_fhf5h"]
+[ext_resource type="Texture2D" uid="uid://cb1nfu84w5lrj" path="res://sprites/creatureFlesh_01/creatureFlesh_01Walk1.png" id="1_s7ol2"]
+[ext_resource type="Texture2D" uid="uid://do2nlceex1byh" path="res://sprites/creatureFlesh_01/creatureFlesh_01Walk2.png" id="2_higqq"]
+[ext_resource type="Script" path="res://addon/dino/gravity.gd" id="3_y24ij"]
+[ext_resource type="Script" path="res://addon/dino/state_machine_controller.gd" id="4_ffixu"]
+[ext_resource type="Script" path="res://addon/state_machine/node_finite_state_machine.gd" id="5_r8lrq"]
+[ext_resource type="Script" path="res://addon/dino/idle_state.gd" id="6_t8ay5"]
+[ext_resource type="Script" path="res://addon/dino/attack_state.gd" id="7_j6n2f"]
+[ext_resource type="Texture2D" uid="uid://bwi7g3wj88jqh" path="res://sprites/creatureFlesh_01/creatureFlesh_01arm.png" id="8_s7o8j"]
+[ext_resource type="Texture2D" uid="uid://b3cs1h58iacii" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK1.png" id="9_o8lvv"]
+[ext_resource type="Texture2D" uid="uid://n11l8ce8cflm" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK2.png" id="10_i5htg"]
+[ext_resource type="Texture2D" uid="uid://bty3pctumvydn" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK3.png" id="11_i1x3u"]
+[ext_resource type="Texture2D" uid="uid://bci5yvwr2ivpj" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK4.png" id="12_lv4xh"]
+[ext_resource type="Texture2D" uid="uid://c2myq47watars" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK5.png" id="13_npam7"]
+[ext_resource type="Texture2D" uid="uid://gigfiwcfg3h5" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK6.png" id="14_aa5cv"]
+[ext_resource type="Texture2D" uid="uid://d3uajjrl1hmo0" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK7.png" id="15_alhhr"]
+[ext_resource type="Texture2D" uid="uid://bedawn1t8ni8" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK8.png" id="16_05aen"]
+[ext_resource type="Texture2D" uid="uid://c0q5tp6ei8ud0" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK9.png" id="17_1hmvj"]
+[ext_resource type="Texture2D" uid="uid://c5bpimkf13swb" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK10.png" id="18_5qh1q"]
+[ext_resource type="Texture2D" uid="uid://doq4qsh1fx1w6" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK11.png" id="19_stini"]
+[ext_resource type="Texture2D" uid="uid://dueqx4px5ul8x" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK12.png" id="20_sfu5r"]
+[ext_resource type="Texture2D" uid="uid://kmi2ntmqheo" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK13.png" id="21_4tque"]
+[ext_resource type="Texture2D" uid="uid://deo8801blifu0" path="res://sprites/creatureFlesh_01/creatureFlesh_01ATK14.png" id="22_0goh6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eletn"]
+size = Vector2(6, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nhp5f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s7ol2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_higqq")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_higqq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3o8fy"]
+radius = 51.0882
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0115w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7va4d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_s7o8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o8lvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i5htg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i1x3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lv4xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_npam7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_aa5cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_alhhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_05aen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1hmvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5qh1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_stini")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_sfu5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4tque")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0goh6")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_s7o8j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Zombie" type="CharacterBody2D" groups=["Enemy"]]
+position = Vector2(-1, -2)
+script = ExtResource("1_fhf5h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eletn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1.33514e-05)
+scale = Vector2(1.25, 1.25)
+sprite_frames = SubResource("SpriteFrames_nhp5f")
+animation = &"attack"
+
+[node name="Gravity" type="Node" parent="." node_paths=PackedStringArray("character_body_2d", "animated_sprite_2d")]
+script = ExtResource("3_y24ij")
+character_body_2d = NodePath("..")
+animated_sprite_2d = NodePath("../AnimatedSprite2D")
+
+[node name="StateMachineController" type="Node" parent="." node_paths=PackedStringArray("node_finite_state_machine")]
+script = ExtResource("4_ffixu")
+node_finite_state_machine = NodePath("../StateMachine")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
+script = ExtResource("5_r8lrq")
+initial_node_state = NodePath("idle")
+
+[node name="idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("character_body_2d", "animated_sprite_2d")]
+script = ExtResource("6_t8ay5")
+character_body_2d = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+
+[node name="attack" type="Node" parent="StateMachine" node_paths=PackedStringArray("character_body_2d", "animated_sprite_2d")]
+script = ExtResource("7_j6n2f")
+character_body_2d = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+speed = 350
+
+[node name="AttackArea2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea2D"]
+shape = SubResource("CircleShape2D_3o8fy")
+
+[node name="HitArea2D" type="Area2D" parent="."]
+position = Vector2(10, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea2D"]
+shape = SubResource("CircleShape2D_0115w")
+
+[node name="Arms" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -1)
+sprite_frames = SubResource("SpriteFrames_7va4d")
+animation = &"attack"
+
+[connection signal="body_entered" from="AttackArea2D" to="StateMachineController" method="_on_attack_area_2d_body_entered"]
+[connection signal="body_exited" from="AttackArea2D" to="StateMachineController" method="_on_attack_area_2d_body_exited"]

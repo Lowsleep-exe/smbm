@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7rsrebvo7tcq"
+path="res://.godot/imported/follows-dark-ambient-194926.mp3-d3a644ab51573ea24916384a411b9880.mp3str"
+
+[deps]
+
+source_file="res://gun sound/follows-dark-ambient-194926.mp3"
+dest_files=["res://.godot/imported/follows-dark-ambient-194926.mp3-d3a644ab51573ea24916384a411b9880.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

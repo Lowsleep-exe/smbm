@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://4knxjg8paume" path="res://sprites/charSprite_armPistol_flash02.png" id="5_cc3gx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dl22b"]
+size = Vector2(6, 20)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pksl2"]
 animations = [{
@@ -60,6 +61,8 @@ zoom = Vector2(3, 3)
 position = Vector2(0, -3)
 script = ExtResource("3_f8msu")
 muzzle_flash = NodePath("Hand")
+max_ammo = null
+reload_time = null
 
 [node name="Hand" type="AnimatedSprite2D" parent="Hand"]
 position = Vector2(14, 3)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbijxwx7qcyng"
+path="res://.godot/imported/mouse-squeaking-sfx-pixabay-378792.mp3-0599fcd4e5a3eebdf6123e6d7e010b8e.mp3str"
+
+[deps]
+
+source_file="res://gun sound/mouse-squeaking-sfx-pixabay-378792.mp3"
+dest_files=["res://.godot/imported/mouse-squeaking-sfx-pixabay-378792.mp3-0599fcd4e5a3eebdf6123e6d7e010b8e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

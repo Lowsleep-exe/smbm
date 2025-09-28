@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqyjviknet1ck"
+path="res://.godot/imported/dripping-water-in-cave-114694.mp3-e687b142e3966d4d8ba5e3ca2189e649.mp3str"
+
+[deps]
+
+source_file="res://gun sound/dripping-water-in-cave-114694.mp3"
+dest_files=["res://.godot/imported/dripping-water-in-cave-114694.mp3-e687b142e3966d4d8ba5e3ca2189e649.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
