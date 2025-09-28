@@ -1,0 +1,167 @@
+[gd_scene load_steps=5 format=3 uid="uid://y5cnfs8q0pqf"]
+
+[ext_resource type="FontFile" uid="uid://knmtqa5p2uom" path="res://Fonts/Symtext.ttf" id="1_8ot4y"]
+[ext_resource type="Texture2D" uid="uid://bsf88cuypkklx" path="res://assets/Images/red hands.jpg" id="2_rop1n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_115gr"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeni1"]
+bg_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 9.0
+offset_right = 372.0
+offset_bottom = 595.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_115gr")
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -78.0
+offset_top = 125.0
+offset_right = 69.0
+offset_bottom = 253.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -169.0
+offset_top = -2.0
+offset_right = 169.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+theme_override_fonts/font = ExtResource("1_8ot4y")
+theme_override_font_sizes/font_size = 30
+text = "oculum pro oculo"
+
+[node name="Label3" type="Label" parent="Panel/Label"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -166.5
+offset_top = 253.0
+offset_right = 171.5
+offset_bottom = 343.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+theme_override_colors/font_shadow_color = Color(0.6097945, 0.56425977, 0.97640926, 0)
+theme_override_fonts/font = ExtResource("1_8ot4y")
+theme_override_font_sizes/font_size = 18
+text = "SCRATCH MY BACK AND I I'LL 
+SCRATCH YOURS.... with your 
+own hands ofc"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/Label/Label3"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -168.0
+offset_top = 104.0
+offset_right = 163.0
+offset_bottom = 227.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+theme_override_fonts/font = ExtResource("1_8ot4y")
+theme_override_font_sizes/font_size = 18
+text = "-I GET: your hands
+-you recieve: faster speed 
+but slower amo reload"
+
+[node name="Accept" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 494.0
+offset_right = 153.31818
+offset_bottom = 547.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yeni1")
+
+[node name="Label" type="Label" parent="Panel/Accept"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.5
+offset_top = -16.0
+offset_right = 47.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_8ot4y")
+theme_override_font_sizes/font_size = 21
+text = "ACCEPT"
+
+[node name="Button" type="Button" parent="Panel/Accept"]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 97.0
+offset_bottom = 60.0
+
+[node name="Reject" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 494.0
+offset_right = 286.31818
+offset_bottom = 547.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yeni1")
+
+[node name="Label" type="Label" parent="Panel/Reject"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.5
+offset_top = -16.0
+offset_right = 47.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_8ot4y")
+theme_override_font_sizes/font_size = 21
+text = "REJECT"
+
+[node name="Button" type="Button" parent="Panel/Reject"]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 97.0
+offset_bottom = 60.0
+
+[node name="RedHands" type="Sprite2D" parent="Panel"]
+position = Vector2(171.5, 146.5)
+scale = Vector2(0.73046875, 0.73046875)
+texture = ExtResource("2_rop1n")

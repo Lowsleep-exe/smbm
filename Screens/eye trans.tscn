@@ -1,0 +1,169 @@
+[gd_scene load_steps=5 format=3 uid="uid://cee3g5glmc8v7"]
+
+[ext_resource type="Texture2D" uid="uid://dnmdcs6fv6ood" path="res://assets/Images/Red eye.jpg" id="1_jsrop"]
+[ext_resource type="FontFile" uid="uid://knmtqa5p2uom" path="res://Fonts/Symtext.ttf" id="2_0lphv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6yu7d"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eqihx"]
+bg_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 372.0
+offset_bottom = 575.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6yu7d")
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -78.0
+offset_top = 125.0
+offset_right = 69.0
+offset_bottom = 253.0
+grow_horizontal = 2
+
+[node name="RedEye" type="Sprite2D" parent="Panel"]
+position = Vector2(166.00002, 128)
+scale = Vector2(0.6953125, 0.59375)
+texture = ExtResource("1_jsrop")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -169.0
+offset_top = -2.0
+offset_right = 169.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+theme_override_fonts/font = ExtResource("2_0lphv")
+theme_override_font_sizes/font_size = 30
+text = "oculum pro oculo"
+
+[node name="Label3" type="Label" parent="Panel/Label"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -164.0
+offset_top = 211.0
+offset_right = 164.0
+offset_bottom = 301.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+theme_override_colors/font_shadow_color = Color(0.6097945, 0.56425977, 0.97640926, 0)
+theme_override_fonts/font = ExtResource("2_0lphv")
+theme_override_font_sizes/font_size = 18
+text = "An eye for an eye, 
+makes the whole world 
+blind. so i'll offer you 
+something different."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/Label/Label3"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -158.5
+offset_top = 145.0
+offset_right = 172.5
+offset_bottom = 268.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.6862745, 0.050980393, 0.03137255, 1)
+theme_override_fonts/font = ExtResource("2_0lphv")
+theme_override_font_sizes/font_size = 18
+text = "-I GET: YOUR EYEBALLS AND
+ HALF YOUR VISION
+-you recieve: ENHANCED
+ HEARING"
+
+[node name="Accept" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 494.0
+offset_right = 159.31818
+offset_bottom = 547.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_eqihx")
+
+[node name="Label" type="Label" parent="Panel/Accept"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.5
+offset_top = -16.0
+offset_right = 47.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0lphv")
+theme_override_font_sizes/font_size = 21
+text = "ACCEPT"
+
+[node name="Button" type="Button" parent="Panel/Accept"]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 97.0
+offset_bottom = 60.0
+
+[node name="Reject" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 494.0
+offset_right = 292.31818
+offset_bottom = 547.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_eqihx")
+
+[node name="Label" type="Label" parent="Panel/Reject"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.5
+offset_top = -16.0
+offset_right = 47.5
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0lphv")
+theme_override_font_sizes/font_size = 21
+text = "REJECT"
+
+[node name="Button" type="Button" parent="Panel/Reject"]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 97.0
+offset_bottom = 60.0

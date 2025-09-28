@@ -1,0 +1,191 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0a1oc4c22rs5"]
+
+[ext_resource type="FontFile" uid="uid://knmtqa5p2uom" path="res://Fonts/Symtext.ttf" id="1_eieo6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8bxou"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dewen"]
+bg_color = Color(0.26717436, 0.29589877, 0.28358832, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0.38039216, 0, 0, 0.6)
+shadow_size = 4
+shadow_offset = Vector2(19.205, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 26.0
+offset_right = 1172.0
+offset_bottom = 670.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8bxou")
+
+[node name="Quit" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 351.0
+offset_top = 520.0
+offset_right = 809.0
+offset_bottom = 620.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dewen")
+
+[node name="Label" type="Label" parent="Panel/Quit"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.0
+offset_top = -55.0
+offset_right = 211.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 17
+theme_override_fonts/font = ExtResource("1_eieo6")
+theme_override_font_sizes/font_size = 75
+text = "Quit"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="Panel/Quit"]
+visible = false
+layout_mode = 0
+offset_left = 9.0
+offset_top = 6.0
+offset_right = 454.0
+offset_bottom = 94.0
+
+[node name="About" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 412.0
+offset_right = 808.0
+offset_bottom = 512.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dewen")
+
+[node name="Label" type="Label" parent="Panel/About"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -211.0
+offset_top = -44.5
+offset_right = 211.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 17
+theme_override_fonts/font = ExtResource("1_eieo6")
+theme_override_font_sizes/font_size = 75
+text = "About"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/About"]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 453.0
+offset_bottom = 92.0
+
+[node name="How to Play" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 304.0
+offset_right = 808.0
+offset_bottom = 404.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dewen")
+
+[node name="Label" type="Label" parent="Panel/How to Play"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -291.5
+offset_top = -55.0
+offset_right = 291.5
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 17
+theme_override_fonts/font = ExtResource("1_eieo6")
+theme_override_font_sizes/font_size = 58
+text = "How to Play"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/How to Play"]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 451.0
+offset_bottom = 93.0
+
+[node name="play" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 197.0
+offset_right = 807.0
+offset_bottom = 297.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dewen")
+
+[node name="Label" type="Label" parent="Panel/play"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.0
+offset_top = -44.5
+offset_right = 99.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 17
+theme_override_fonts/font = ExtResource("1_eieo6")
+theme_override_font_sizes/font_size = 75
+text = "PLAY"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/play"]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 451.0
+offset_bottom = 94.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -479.0
+offset_top = 29.0
+offset_right = 504.0
+offset_bottom = 191.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.5411765, 0.011764706, 0.011764706, 1)
+theme_override_fonts/font = ExtResource("1_eieo6")
+theme_override_font_sizes/font_size = 110
+text = "carpe-membra"
