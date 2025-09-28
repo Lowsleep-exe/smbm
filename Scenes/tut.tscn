@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmd7eletr1srd"]
+[gd_scene load_steps=3 format=4 uid="uid://bmd7eletr1srd"]
 
 [ext_resource type="PackedScene" uid="uid://chg8hchj2y6qt" path="res://Scenes/Player.tscn" id="1_paeu6"]
+[ext_resource type="TileSet" uid="uid://baf2y0o0k4kd5" path="res://Tile/Cave.tres" id="2_jn6hd"]
 
 [node name="Tut" type="Node2D"]
 
@@ -8,3 +9,5 @@
 position = Vector2(507, 385)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAWABwAAAABAAAAAAAXABwAAAACAAAAAAAYABwAAAACAAAAAAAZABwAAAACAAAAAAAZABsAAAACAAAAAAAaABsAAAACAAAAAAAaABwAAAACAAAAAAAbABwAAAACAAAAAAAcABwAAAACAAAAAAAdABwAAAACAAAAAAAeABwAAAACAAAAAAAfABwAAAACAAAAAAAgABwAAAACAAAAAAAhABwAAAACAAAAAAAiABwAAAACAAAAAAAjABwAAAACAAAAAAAkABwAAAACAAAAAAAlABwAAAADAAAAAAAgABsAAAACAAAAAAAhABsAAAACAAAAAAA=")
+tile_set = ExtResource("2_jn6hd")
