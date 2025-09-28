@@ -37,7 +37,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"flash",
-"speed": 5.0
+"speed": 60.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
@@ -56,11 +56,15 @@ position = Vector2(15, 1)
 scale = Vector2(1.90376, 1.39843)
 zoom = Vector2(3, 3)
 
-[node name="Hand" type="Node2D" parent="."]
+[node name="Hand" type="Node2D" parent="." node_paths=PackedStringArray("muzzle_flash")]
 position = Vector2(0, -3)
 script = ExtResource("3_f8msu")
+muzzle_flash = NodePath("Hand")
 
 [node name="Hand" type="AnimatedSprite2D" parent="Hand"]
 position = Vector2(14, 3)
 scale = Vector2(1.30376, 1.15843)
 sprite_frames = SubResource("SpriteFrames_pksl2")
+animation = &"flash"
+frame = 1
+frame_progress = 0.560261
